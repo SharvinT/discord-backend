@@ -9,7 +9,13 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT || 8002;
 
-const pusher = new Pusher(process.env.PUSHER_CONFIG);
+const pusher = new Pusher({
+  appId: process.env.appId,
+  key: process.env.key,
+  secret: process.env.secret,
+  cluster: "ap2",
+  useTLS: true,
+});
 
 // middlewaare
 app.use(express.json());
@@ -39,6 +45,7 @@ mongoose.connection.once("open", () => {
     }
   });
 });
+// s5yjDMLBNZQ9hSOl
 // api routes
 app.get("/", (req, res) => res.status(200).send("hello world"));
 app.post("/new/channel", (req, res) => {
