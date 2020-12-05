@@ -8,11 +8,12 @@ dotenv.config();
 // api config
 const app = express();
 const port = process.env.PORT || 8002;
-
+const DB_CONNECTION =
+  "mongodb+srv://admin:s5yjDMLBNZQ9hSOl@cluster0.ffuei.mongodb.net/discord-db?retryWrites=true&w=majority";
 const pusher = new Pusher({
-  appId: process.env.appId,
-  key: process.env.key,
-  secret: process.env.secret,
+  appId: 1117286,
+  key: "c8712fa6f2e7ca43a458",
+  secret: "f2ce7818dbd0fd0d2de9",
   cluster: "ap2",
   useTLS: true,
 });
@@ -22,7 +23,7 @@ app.use(express.json());
 app.use(cors());
 
 // db config
-mongoose.connect(process.env.DB_CONNECTION, {
+mongoose.connect(DB_CONNECTION, {
   useCreateIndex: true,
   useNewUrlParser: true,
   useUnifiedTopology: true,
