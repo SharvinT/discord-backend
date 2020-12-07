@@ -8,26 +8,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 -> Then for the Back-end part, initially using the Firebase for Authenticating and for cloud storage.<br />
 -> Then later using the Node Js including the powerful ExpressJs and serverless database MongoDb.
 
-### `Steps for building Discord (front-end)`
-
-1. Set-up the React Environment using the below commands.
-2. Building the Sidebar.
-3. Building the Chat section.
-4. Configuring the Firebase for Authentication and for cloud storage.
-5. After completing the development, deploy it in the Firebase.
-6. Then implementing the Back-end using the Node js with Express js and MongoDB.
-7. Hosing the backend(Node js) in Heroku and host entire project in firebase hosing.
-
 ### `Steps for building Discord (back-end)`
 
 1. Setup the Node envirorment and install all the required packages require such as Express, MongoDB, Nodemon so on..
 2. Declare the config files which is required for the project.
 3. Call the middleware for the authentication.
 4. Connect to the DB with the database configuration and create a separate page for the Schema models in DB Collections.
-5. Then call the API with the Push,Get,Put and other crud functionality calls with the help of POSTMAN.
-6. Create a separate API for creating the Channels and to send the message with respect to the channel.
-7. Then with the help of the PUSHER creating the Real Time Database envirorment with the MongoDB.
-8. Then with the HELp of the Axios displaying to the front end screen with the help of the PUSHER.
+5. Create a REST API for the Push and Get functionality for Creating the Channels and messages with POSTMAN for testing.
+6. Configure the PUSHER for creating the Real Time Database envirorment with the MongoDB such as Add and Update.
+7. Then with the HELp of the Axios displaying to the front end screen with the help of the PUSHER.
 
 ## Available Scripts
 
